@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All Projects - Patrick Odeh</title>
+  <link rel="stylesheet" href="{% static 'css/projects-archive.css' %}" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <main class="container">
+    <h1 class="page-title">All Projects</h1>
+    
+    <div class="table-wrapper">
+      <table class="project-table">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Project</th>
+            <th>Built With</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2024</td>
+            <td><strong>API Tracker</strong></td>
+            <td>Django, Celery, Redis</td>
+            <td><a href="https://github.com/your-profile/api-tracker" target="_blank">GitHub</a></td>
+          </tr>
+          <tr>
+            <td>2023</td>
+            <td><strong>GeoMap Tool</strong></td>
+            <td>Django, Leaflet, OSM</td>
+            <td><a href="https://github.com/your-profile/map-tool" target="_blank">GitHub</a></td>
+          </tr>
+          <!-- Add more project rows here -->
+        </tbody>
+      </table>
+    </div>
+
+    <a href="/" class="back-btn">← Back to Portfolio</a>
+  </main>
+</body>
+</html>

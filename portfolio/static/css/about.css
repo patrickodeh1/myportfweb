@@ -1,0 +1,289 @@
+/* === Base Styles === */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #0f172a; /* Dark background */
+  color: #94a3b8;            /* Slate text */
+  line-height: 1.6;
+}
+
+/* === Layout Containers === */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* === Header Sidebar === */
+header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 30vw;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 2rem 2rem 9rem;
+  background-color: #0f172a;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  color: #e2e8f0;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #e2e8f0;
+}
+
+header h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #e2e8f0;
+}
+
+header p {
+  max-width: 80%;
+}
+/* === Main Content === */
+main {
+  margin-left: 40vw;
+  padding-top: 5rem;
+}
+
+main .container {
+  padding: 0 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+section p {
+  margin-bottom: 2rem;
+}
+
+/* === Navigation === */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+nav li {
+  margin-bottom: 1rem;
+}
+
+nav a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #ffffff;
+}
+
+/* === Section Headings === */
+section h3 {
+  color: #e2e8f0;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 0.5rem;
+}
+
+/* === Experience === */
+.job {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.job-date {
+  min-width: 120px;
+  color: #64748b;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.job-details h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.job-details p {
+  margin: 0.5rem 0 0;
+  color: #94a3b8;
+}
+
+/* === Projects === */
+.project {
+  margin-bottom: 2rem;
+  
+}
+
+.project h4 a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project h4 a:hover {
+  color: #0077cc;
+}
+
+.project p {
+  color: #94a3b8;
+  margin-top: 0.5rem;
+}
+
+/* === Footer === */
+footer {
+  margin-top: auto;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+footer a {
+  color: #e7ecec;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+/* Footer icon styling */
+.icon-footer {
+  margin-top: auto;
+}
+
+.icon-footer svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+/* === Responsive Design === */
+@media (max-width: 1024px) {
+  header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    align-items: flex-start;
+  }
+
+  main {
+    margin-left: 0;
+    padding-top: 0;
+  }
+
+  .container {
+    max-width: 90%;
+    padding: 2rem 1rem;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  footer ul {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header h2 {
+    font-size: 1rem;
+  }
+
+  section p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+.tech-stack {
+  margin-top: 1.5rem;
+}
+
+.tech-stack ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tech-stack li {
+  background-color: #1e293b;
+  color: #07d6c5;
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+
+/* === Button Container === */
+.resume-button, .archive-button {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: #1e293b;
+  color: #e2e8f0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #334155;
+}
+
+
