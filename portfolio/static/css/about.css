@@ -286,4 +286,13 @@ footer a:hover {
   background-color: #334155;
 }
 
-
+.site-footer {
+  background-color: #0f172a;
+  color: #cccccc;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  width: fit-content;
+  margin: 4rem 2rem 2rem 40vw; /* shift right to avoid fixed header */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
