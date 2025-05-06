@@ -14,13 +14,12 @@
   <meta property="og:title" content="Patrick Odeh – Backend Engineer" />
   <meta property="og:description" content="Building robust web architectures with Django and modern tech." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="{% static 'img/preview.jpg' %}" /> <!-- optional -->
   <meta property="og:url" content="https://your-domain.com/" />
   
   <title>Patrick Odeh</title>
   <link rel="stylesheet" href="{% static 'css/about.css' %}" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon" />
+  <link rel="icon" href="{% static 'files/fav.ico' %}" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
@@ -85,41 +84,60 @@
       <div class="container">
       <section id="about" class="fade-in">
         <h3>About</h3>
-        <p>I'm a developer passionate about crafting resilient, functional backend systems that solve real-world problems. 
-            I specialize in Django and enjoy designing clean, scalable RESTful APIs, integrating external services, 
-            and building full web solutions from the ground up.</p>
-    
-        <p>Databases are a core part of my workflow—I focus on designing efficient schemas, optimizing queries, 
-            and ensuring data flows reliably through every layer of the stack. 
-            I also enjoy working with map and location-based APIs, combining spatial data with backend logic to power location-aware features.</p>
-            
-        <p>While my primary focus is on backend engineering, I often build minimal frontends to test, demonstrate, and iterate on my work—always 
-            keeping usability in mind. Whether it's connecting APIs, managing data, or architecting infrastructure, I'm driven by building systems 
-            that are both resilient and maintainable.</p>
-        <p>In my spare time, I'm usually exploring new backend frameworks, experimenting with data-driven side projects, or 
-            digging into geospatial APIs to see what's possible.</p>
+        
+        <p>
+          I'm a dedicated and results-driven Backend Engineer with a passion for building 
+          innovative and scalable solutions. Specializing in Python and Django, I thrive on 
+          creating powerful APIs, seamlessly integrating payment systems, and developing 
+          efficient e-commerce platforms. With extensive experience in AI integration and CMS, 
+          I focus on delivering solutions that not only meet technical requirements but also 
+          drive business success.
+        </p>
+        <p>
+          While I'm deeply rooted in backend development, I enjoy stepping into the frontend world 
+          to bring my projects to life. Whether it's crafting clean user interfaces or building 
+          complex data structures, I always aim to bridge the gap between functionality and user 
+          experience. My approach is centered around writing clean, maintainable code, and constantly 
+          seeking opportunities to optimize performance and scalability.
+        </p>
+        <p>
+          Currently open to new opportunities, I'm eager to bring my technical expertise and innovative 
+          mindset to a forward-thinking team. Let's connect and create something great together.
+        </p>
+
       </section>
 
       <section id="experience" class="fade-in">
         <h3>Experience</h3>
         <div class="job">
-          <span class="job-date">2023 — Present</span>
+          <span class="job-date">2023 — 2025</span>
           <div class="job-details">
-            <h4>Backend Engineer · XYZ Tech</h4>
-            <p>Leading backend development with Django, PostgreSQL, and REST APIs. Improved system performance by 30% and led data migration projects.</p>
+            <h4>Software Engineering Student · ALX Africa</h4>
+            <p>As a student at ALX Africa, I worked on various technical projects to develop my
+              portfolio and strengthen my software engineering skills. Key contributions include:
+              Implemented system monitoring dashboards using Datadog to track key
+              performance metrics for web servers and optimized server performance.
+              Built search and filtering functionality for a marketplace platform using Django,
+              allowing location-based item listings and improved user navigation.
+              Configured HAProxy load balancer and SSL certificates for secure and efficient
+              handling of web traffic.
+              Collaborated in debugging and optimizing web stacks, resolving errors, and
+              improving overall performance of web applications.
+              </p>
             <div class="tech-stack">
               <ul>
-                <li>Django</li>
-                <li>PostgreSQL</li>
+                <li>c</li>
+                <li>Python</li>
                 <li>Redis</li>
-                <li>Celery</li>
-                <li>Docker</li>
+                <li>MySQL</li>
+                <li>JavaScript</li>
+                <li>DSA</li>
               </ul>
             </div>  
           </div>
         </div>
       
-        <div class="job">
+        <!--<div class="job">
           <span class="job-date">2021 — 2023</span>
           <div class="job-details">
             <h4>Junior Backend Developer · DevStart</h4>
@@ -134,7 +152,8 @@
               </ul>
             </div>
           </div>    
-        </div>         
+        </div>
+      -->        
       
 
       <div class="resume-button">
@@ -147,29 +166,49 @@
         <h3>Projects</h3>
       
         <div class="project">
-          <h4><a href="https://github.com/your-profile/api-tracker" target="_blank">API Tracker</a></h4>
-          <p>A tool for monitoring REST API uptime and performance with email alerts, built using Django, Celery, and Redis.</p>
+          <h4><a href="https://github.com/patrickodeh1/Hostify" target="_blank">Hostify</a></h4>
+          <p>Hostify is a platform designed to simplify Hotel booking services, focusing on streamlined setup, management, and monitoring</p>
           <div class="tech-stack">
             <ul>
               <li>Python</li>
-              <li>Leaflet</li>
-              <li>OpenStreetMap</li>
+              <li>Django</li>
               <li>HTML/CSS</li>
-              <li>JavaScript</li>
             </ul>
           </div>
         </div>
 
         <div class="project">
-          <h4><a href="https://github.com/your-profile/map-tool" target="_blank">GeoMap Tool</a></h4>
-          <p>A Django-based mapping app that visualizes geospatial data using Leaflet and OpenStreetMap APIs.</p>
+          <h4><a href="http://github.com/patrickodeh1/Task-Management-API" target="_blank">Task Management API</a></h4>
+          <p>A RESTful API for managing tasks with user authentication, role-based access (admin/user), image uploads, and a leaderboard feature. Built with Node.js, Express, MongoDB, and JWT.</p>
           <div class="tech-stack">
             <ul>
-              <li>Python</li>
-              <li>Leaflet</li>
-              <li>OpenStreetMap</li>
-              <li>HTML/CSS</li>
               <li>JavaScript</li>
+              <li>Express</li>
+              <li>NodeJS</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <h4><a href="https://github.com/patrickodeh1/TradeSphere" target="_blank">TradeSphere</a></h4>
+          <p>TradeSphere is a location-based marketplace platform designed to connect buyers and sellers in their local areas. </p>
+          <div class="tech-stack">
+            <ul>
+              <li>Django</li>
+              <li>MySQL</li>
+              <li>html/css</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <h4><a href="https://github.com/patrickodeh1/AdFriend" target="_blank">AdFriend</a></h4>
+          <p>AdFriend is a Chrome extension designed to replace online advertisements with positive and uplifting content, enhancing your browsing experience.</p>
+          <div class="tech-stack">
+            <ul>
+              <li>JavaScript</li>
+              <li>html/css</li>
             </ul>
           </div>
         </div>
