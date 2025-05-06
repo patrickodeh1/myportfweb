@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-eo*4swd06)19)6ooff9evetg47y=6cv9kqvzo6bt#gf%9ugk3)
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'core.herokuapp.com',
+    'patrickodeh.onrender.com',
     '127.0.0.1',
     ]
 
